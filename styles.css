@@ -1,0 +1,41 @@
+body {
+  background: #f2f2f2;
+}
+
+.wrap {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  padding: 29px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.wrap .img-logo {
+  display: block;
+  margin: 0px auto 28px;
+}
+
+.wrap .txt-login {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.wrap .btn-login {
+  display: block;
+  margin-top: 32px;
+  padding: 17px 190px 15px 189px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+  background-color: #2f80ed;
+  border-radius: 5px;
+}

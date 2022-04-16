@@ -1,0 +1,218 @@
+/* Layout */
+
+body {
+  background-color: #f2f2f2;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* design */
+
+.header-signup {
+  position: relative;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.tit-signup {
+  display: inline-block;
+  margin: 19px 0 18px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button-close {
+  top: 20px;
+  right: 22px;
+  position: absolute;
+}
+
+.txt-signup {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.section-login {
+  padding: 0 23px 14px;
+}
+
+.txt-signup {
+  text-align: start;
+  margin: 26px 0 24px;
+}
+
+input[class*="input"] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-indent: 15px;
+}
+
+.btn-checkbox {
+  margin: 16px 0 20px;
+  text-align: left;
+}
+
+.img-checkbox {
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.txt-checkbox {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #767676;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.section-login .btn-login {
+  display: block;
+  width: 100%;
+  padding: 14px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  background-color: #2f80ed;
+  border-radius: 5px;
+}
+
+.find {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #767676;
+}
+
+.link-signup {
+  order: -2;
+}
+
+.find::after {
+  content: "";
+  display: block;
+  order: -1;
+  width: 1px;
+  height: 1em;
+  background-color: #767676;
+  margin: 0 12px;
+}
+
+.line-or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #767676;
+}
+
+.line-or::before {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 1px;
+  margin-right: 13px;
+  background: #c4c4c4;
+}
+
+.line-or::after {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 1px;
+  margin-left: 13px;
+  background: #c4c4c4;
+}
+
+.btn-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-style {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 50px;
+  color: #767676;
+}
+
+.btn-style::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  bottom: 11px;
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.btn-google {
+  border: 1px solid #767676;
+  position: relative;
+}
+
+.btn-google::before {
+  background-image: url("img/google.png");
+}
+
+.btn-facebook {
+  border: 1px solid #2d9cdb;
+  position: relative;
+}
+
+.btn-facebook::before {
+  background-image: url("img/facebook.png");
+}
+
+.btn-naver {
+  border: 1px solid #00bf18;
+  position: relative;
+}
+
+.btn-naver::before {
+  background-image: url("img/naver.png");
+}
+
+.btn-kakao {
+  border: 1px solid #f2c94c;
+  position: relative;
+}
+
+.btn-kakao::before {
+  background-image: url("img/kakao.png");
+}

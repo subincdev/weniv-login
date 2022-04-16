@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="modal.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위니브 로그인 화면</title>
+</head>
+<body>
+    <article class="modal">
+        <header class="header-signup">
+            <h2 class="tit-signup">로그인 또는 회원가입</h2>
+            <a href="index.html" class="button-close">
+                <img src="img/close.png" alt="닫기">
+            </a>
+        </header>
+        <section class="section-login">
+            <h2 class="txt-signup">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <form name="loginForm" action="#" method="post">
+                <input id="id" type="text" placeholder="아이디" class="input-id">
+                <input id="pw" type="password" placeholder="비밀번호" class="input-pw">
+                <div class="btn-checkbox" onclick="changeImage()">
+                    <img id ="icon-checkbox"src="img/nonchek-box.png" alt="로그인 상태 체크박스" class="img-checkbox">
+                    <label for="icon-checkbox" class="txt-checkbox">로그인 상태 유지</label>
+                </div>
+                <button type="submit" class="btn-login" onclick="IDcheck()">로그인</button>
+            </form>
+            <div class="find">
+                <a href="#" class="link-signup">회원가입</a>
+                <a href="#">아이디/비밀번호 찾기</a>
+            </div>
+            <p class="line-or">또는</p>
+            <div class="btn-social">
+                <button class="btn-style btn-google">구글 계정으로 로그인</button>
+                <button class="btn-style btn-facebook">페이스북 계정으로 로그인</button>
+                <button class="btn-style btn-naver">네이버 계정으로 로그인</button>
+                <button class="btn-style btn-kakao">카카오톡 계정으로 로그인</button>
+        </section>
+    </article>
+    <script>
+        state=0;
+        function changeImage(){
+            if (state==0){
+                state=1;
+                document.getElementById("icon-checkbox").src="img/check-box.png";
+            }
+            else{
+                state=0;
+                document.getElementById("icon-checkbox").src="img/nonchek-box.png";
+            }
+        }
+
+        // function IDcheck {
+        //     var id= document.getElementById("id");
+        //     if ((id.value)==""){
+        //     id.style.border = "2px solid #F4492E";
+        //     return false;
+        // }
+        //}
+    </script>
+</body>
+</html>
