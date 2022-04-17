@@ -125,15 +125,15 @@ input[class*="input"] {
 
 .line-or {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 30px 0 20px;
+  margin: 30px -1em 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #767676;
 }
 
+/* 
 .line-or::before {
   content: "";
   display: block;
@@ -149,6 +149,14 @@ input[class*="input"] {
   width: 210px;
   height: 1px;
   margin-left: 13px;
+  background: #c4c4c4;
+} */
+.line-or::before,
+.line-or::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: 0 1em;
   background: #c4c4c4;
 }
 
